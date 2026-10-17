@@ -7,6 +7,8 @@ Repositori ini berisi kode sumber (*source code*) untuk **Web Portal Layanan Man
 
 ![Preview Landing Page Desa Sukasari](./gambar.PNG)
 
+![Preview Landing Page Desa Sukasari](./gambar1.PNG)
+
 ---
 
 ## 🚀 Fitur Utama
