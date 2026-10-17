@@ -57,3 +57,7 @@ desasukasari-portal/
 ├── uploads/                   # Folder penyimpanan file upload (Foto Bukti Aduan)
 ├── schema.sql                 # Skrip DDL Database MySQL
 └── README.md                  # Dokumentasi Proyek
+
+
+Pengembang : fadli seftian
+email : fadliseftian19@gmail.com
