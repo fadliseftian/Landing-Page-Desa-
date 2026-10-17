@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Surat Keterangan Tidak Mampu (SKTM) - Desa Sukasari</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Terpisah -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-['Plus_Jakarta_Sans']">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- Logo & Back to Home -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-emerald-600/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">Sukasari</span>
+                    <span class="text-[10px] tracking-widest text-emerald-600 font-semibold uppercase">Layanan Mandiri</span>
+                </div>
+            </a>
+
+            <!-- Back Link -->
+            <a href="index.html#layanan" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">
+                <i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-12 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/80 to-slate-900/90 z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-20">
+            <div class="flex items-center gap-3 text-emerald-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                <i class="fa-solid fa-hand-holding-heart"></i> Layanan Bantuan Sosial
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Surat Keterangan Tidak Mampu (SKTM)</h1>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mt-2 leading-relaxed">
+                Layanan permohonan penerbitan dokumen resmi SKTM bagi keluarga kurang mampu di Desa Sukasari untuk keperluan pengajuan beasiswa, keringanan biaya kesehatan (BPJS/Rumah Sakit), atau bantuan sosial pemerintah.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Area: Form & Information -->
+    <main class="max-w-7xl mx-auto px-6 md:px-12 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Sidebar: Syarat & Alur Prosedur -->
+            <div class="lg:col-span-4 space-y-6">
+                
+                <!-- Card Syarat -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2.5">
+                        <i class="fa-solid fa-clipboard-check text-emerald-600"></i> Syarat & Berkas Persyaratan
+                    </h3>
+                    <ul class="space-y-3 text-xs text-slate-600">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                            <span>Fotokopi Kartu Keluarga (KK) Desa Sukasari.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                            <span>Fotokopi KTP Pemohon / Orang Tua / Wali.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                            <span>Surat Pengantar Pengajuan SKTM dari RT/RW setempat.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                            <span>Surat Pernyataan Tidak Mampu bersurat di atas materai.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card Tracking / Cek Status Ajuan SKTM -->
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-6 rounded-3xl border border-emerald-100 shadow-sm space-y-3">
+                    <div class="flex items-center gap-2.5 text-emerald-800 font-bold text-base">
+                        <i class="fa-solid fa-magnifying-glass-location text-emerald-600 text-lg"></i>
+                        <h3>Cek Status Ajuan SKTM</h3>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Sudah pernah mengajukan SKTM? Masukkan Kode Tracking (Contoh: <span class="font-mono text-emerald-700">SKTM-20261017-1626</span>), No. KK, atau NIK untuk melihat status ajuan Anda.
+                    </p>
+                    <button type="button" id="btnOpenTrackingSKTM" class="w-full py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-search"></i> Cek Status SKTM
+                    </button>
+                </div>
+
+                <!-- Card Alur Process -->
+                <div class="bg-emerald-900 text-white p-6 rounded-3xl space-y-4 shadow-lg shadow-emerald-950/20">
+                    <h3 class="text-lg font-bold text-emerald-300 flex items-center gap-2.5">
+                        <i class="fa-solid fa-arrows-spin"></i> Alur Prosedur SKTM
+                    </h3>
+                    <div class="space-y-4 text-xs">
+                        <div class="flex gap-3 items-start">
+                            <span class="w-6 h-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-[10px] shrink-0">1</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Pengisian Formulir</h4>
+                                <p class="text-emerald-200 text-[11px]">Isi data pemohon dan peruntukan SKTM secara detail.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="w-6 h-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-[10px] shrink-0">2</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Verifikasi Lapangan / Data DTKS</h4>
+                                <p class="text-emerald-200 text-[11px]">Petugas Kasi Kesejahteraan Desa mencocokkan data sosial keluarga.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="w-6 h-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-[10px] shrink-0">3</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Penerbitan Surat</h4>
+                                <p class="text-emerald-200 text-[11px]">Surat SKTM siap dicetak dan ditandatangani Kepala Desa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Form Utama Pengajuan SKTM -->
+            <div class="lg:col-span-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-6">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">Formulir Permohonan SKTM</h2>
+                        <p class="text-xs text-slate-500 mt-1">Isikan data diri pemohon (atau anak/anggota keluarga yang bersangkutan) secara valid.</p>
+                    </div>
+
+                    <form id="formSKTM" class="space-y-6">
+                        
+                        <!-- Bagian 1: Data Kepala Keluarga / Orang Tua -->
+                        <div class="border-b border-slate-100 pb-6 space-y-4">
+                            <h3 class="text-sm font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-users"></i> 1. Identitas Kepala Keluarga / Orang Tua
+                            </h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Kepala Keluarga (sesuai KK) *</label>
+                                    <input type="text" id="namaKK" name="namaKK" required placeholder="Contoh: Supriatna" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nomor Kartu Keluarga (KK) *</label>
+                                    <input type="text" id="noKK" name="noKK" maxlength="16" required placeholder="3217xxxxxxxxxxxx" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">NIK Kepala Keluarga *</label>
+                                    <input type="text" id="nikKK" name="nikKK" maxlength="16" required placeholder="3217xxxxxxxxxxxx" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Pekerjaan Kepala Keluarga *</label>
+                                    <input type="text" id="pekerjaanKK" name="pekerjaanKK" required placeholder="Contoh: Buruh Harian Lepas / Petani" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bagian 2: Data Pemohon / Yang Bersangkutan -->
+                        <div class="border-b border-slate-100 pb-6 space-y-4">
+                            <h3 class="text-sm font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-user-graduate"></i> 2. Identitas Yang Bersangkutan / Anak
+                            </h3>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Lengkap Siswa / Pasien / Pemohon *</label>
+                                    <input type="text" id="namaSiswa" name="namaSiswa" required placeholder="Contoh: Rizky Febrian" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">NIK Siswa / Pasien *</label>
+                                    <input type="text" id="nikSiswa" name="nikSiswa" maxlength="16" required placeholder="3217xxxxxxxxxxxx" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nomor WhatsApp / Kontak Aktif *</label>
+                                    <input type="tel" id="hpPemohon" name="hpPemohon" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">RT / RW Alamat Rumah *</label>
+                                    <input type="text" id="rtrwRumah" name="rtrwRumah" required placeholder="Contoh: RT 01 / RW 04" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bagian 3: Keperluan SKTM -->
+                        <div class="space-y-4">
+                            <h3 class="text-sm font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-file-invoice"></i> 3. Peruntukan Surat SKTM
+                            </h3>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Kategori Keperluan *</label>
+                                    <select id="kategoriSKTM" name="kategoriSKTM" required class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                        <option value="">-- Pilih Kategori --</option>
+                                        <option value="Beasiswa / Pengurangan Biaya Sekolah">Pendidikan (Beasiswa / KIP / SPP Sekolah)</option>
+                                        <option value="Kesehatan / Keringanan Rumah Sakit">Kesehatan (Rujukan Rumah Sakit / BPJS PBI)</option>
+                                        <option value="Bantuan Sosial Pemerintah">Bantuan Sosial (PKH / Sembako / BLT)</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Instansi / Sekolah / Rumah Sakit Tujuan *</label>
+                                    <input type="text" id="instansiTujuan" name="instansiTujuan" required placeholder="Contoh: Universitas Padjadjaran / RSUD Bandung" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Alamat Lengkap Rumah *</label>
+                                <textarea id="alamatRumah" name="alamatRumah" rows="2" required placeholder="Nama jalan, nomor rumah, dusun, atau patokan..." class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Button Submit -->
+                        <div class="pt-4">
+                            <button type="submit" id="btnSubmit" class="w-full py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Permohonan SKTM Online
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal Resi Pengajuan Sukses -->
+    <div id="modalSuccess" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl relative">
+            
+            <div class="text-center space-y-2">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="text-2xl font-extrabold text-slate-900">Pengajuan Berhasil!</h3>
+                <p class="text-xs text-slate-500">Permohonan Surat Keterangan Tidak Mampu (SKTM) Anda telah masuk dalam antrean sistem Desa Sukasari.</p>
+            </div>
+
+            <!-- Tiket / Resi Details -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs space-y-2 font-mono">
+                <div class="flex justify-between border-b border-slate-200 pb-2">
+                    <span class="text-slate-400">Kode Tracking:</span>
+                    <span id="resKode" class="font-bold text-emerald-700">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Kepala Keluarga:</span>
+                    <span id="resKK" class="font-bold text-slate-800">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Nama Bersangkutan:</span>
+                    <span id="resNama" class="font-bold text-slate-800">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Status Permohonan:</span>
+                    <span class="font-bold text-amber-600 bg-amber-100 px-2 py-0.5 rounded">Menunggu Verifikasi</span>
+                </div>
+            </div>
+
+            <div class="text-xs text-slate-500 leading-relaxed text-center">
+                Simpan kode tracking ini. Petugas Kesejahteraan Desa akan mengonfirmasi berkas Anda melalui nomor WhatsApp yang terdaftar.
+            </div>
+
+            <div class="flex gap-3">
+                <button onclick="window.print()" class="w-1/2 py-2.5 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-bold text-xs transition-colors">
+                    <i class="fa-solid fa-print"></i> Cetak Bukti
+                </button>
+                <a href="index.html" class="w-1/2 py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-xs text-center transition-colors">
+                    Selesai
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- MODAL POPUP CEK STATUS SKTM -->
+<div id="modalTrackingSKTM" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl relative">
+        
+        <!-- Header Modal & Close Button -->
+        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+            <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">Tracking Surat SKTM</h3>
+                    <p class="text-xs text-slate-500">Lacak progres Surat Keterangan Tidak Mampu</p>
+                </div>
+            </div>
+            <button type="button" id="btnCloseTrackingSKTM" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Form Input Pencarian -->
+        <form id="formCekStatusSKTM" class="space-y-3">
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Kode Tracking / No. KK / NIK Siswa *</label>
+                <div class="flex gap-2">
+                    <input type="text" id="inputKeywordSKTM" required placeholder="Contoh: SKTM-20261017-1626" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all uppercase">
+                    <button type="submit" id="btnCekSKTM" class="py-2.5 px-5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl transition-all shrink-0 flex items-center gap-1.5">
+                        <i class="fa-solid fa-magnifying-glass"></i> Cari
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Container Hasil Pencarian -->
+        <div id="hasilTrackingSKTM" class="hidden space-y-4">
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs space-y-2 font-mono">
+                <div class="flex justify-between border-b border-slate-200 pb-2">
+                    <span class="text-slate-400">Kode Tracking:</span>
+                    <span id="trackKodeSKTM" class="font-bold text-emerald-700">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Kepala Keluarga:</span>
+                    <span id="trackKKSKTM" class="font-bold text-slate-800">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Nama Bersangkutan:</span>
+                    <span id="trackNamaSKTM" class="font-bold text-slate-800">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Kategori SKTM:</span>
+                    <span id="trackKategoriSKTM" class="text-slate-700">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Tanggal Pengajuan:</span>
+                    <span id="trackTglSKTM" class="text-slate-700">-</span>
+                </div>
+                <div class="flex justify-between items-center pt-1 border-t border-slate-200">
+                    <span class="text-slate-400">Status Saat Ini:</span>
+                    <span id="trackStatusBadgeSKTM" class="font-bold px-2.5 py-1 rounded-full text-[11px] bg-amber-100 text-amber-700">
+                        Menunggu Verifikasi
+                    </span>
+                </div>
+            </div>
+
+            <div id="trackKeteranganSKTM" class="p-3 bg-emerald-50 border border-emerald-200/80 rounded-xl text-xs text-emerald-800 leading-relaxed">
+                <i class="fa-solid fa-circle-info mr-1"></i> Permohonan Anda dalam tahap verifikasi oleh Petugas Kesejahteraan Desa Sukasari.
+            </div>
+        </div>
+
+        <!-- Pesan Error jika tidak ditemukan -->
+        <div id="trackErrorSKTM" class="hidden p-4 bg-red-50 border border-red-200 text-red-700 rounded-2xl text-xs text-center font-medium">
+            <i class="fa-solid fa-triangle-exclamation text-base block mb-1"></i>
+            Data pengajuan tidak ditemukan. Pastikan Kode Tracking, No. KK, atau NIK yang Anda masukkan sesuai.
+        </div>
+
+    </div>
+</div>
+    <!-- Script Logic AJAX / Fetch ke PHP -->
+    <script>
+        const formSKTM = document.getElementById('formSKTM');
+        const modalSuccess = document.getElementById('modalSuccess');
+        const btnSubmit = document.getElementById('btnSubmit');
+
+        formSKTM.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            btnSubmit.disabled = true;
+            btnSubmit.innerHTML = '<i class="fa-solid fa-spinner animate-spin"></i> Menyimpan Data...';
+
+            const formData = new FormData(formSKTM);
+
+            fetch('process_sktm.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                btnSubmit.disabled = false;
+                btnSubmit.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Kirim Permohonan SKTM Online';
+
+                if (data.status === 'success') {
+                    document.getElementById('resKode').innerText = data.trackingCode;
+                    document.getElementById('resKK').innerText = data.namaKK;
+                    document.getElementById('resNama').innerText = data.namaSiswa;
+
+                    modalSuccess.classList.remove('hidden');
+                } else {
+                    alert('Gagal menyimpan data: ' + data.message);
+                }
+            })
+            .catch(error => {
+                btnSubmit.disabled = false;
+                btnSubmit.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Kirim Permohonan SKTM Online';
+                console.error('Error:', error);
+                alert('Terjadi kesalahan koneksi ke server.');
+            });
+        });
+
+
+        // --- JAVASCRIPT POPUP TRACKING STATUS SKTM ---
+const modalTrackingSKTM = document.getElementById('modalTrackingSKTM');
+const btnOpenTrackingSKTM = document.getElementById('btnOpenTrackingSKTM');
+const btnCloseTrackingSKTM = document.getElementById('btnCloseTrackingSKTM');
+const formCekStatusSKTM = document.getElementById('formCekStatusSKTM');
+const hasilTrackingSKTM = document.getElementById('hasilTrackingSKTM');
+const trackErrorSKTM = document.getElementById('trackErrorSKTM');
+const btnCekSKTM = document.getElementById('btnCekSKTM');
+
+// Buka Modal Tracking SKTM
+btnOpenTrackingSKTM.addEventListener('click', () => {
+    modalTrackingSKTM.classList.remove('hidden');
+    hasilTrackingSKTM.classList.add('hidden');
+    trackErrorSKTM.classList.add('hidden');
+    document.getElementById('inputKeywordSKTM').value = '';
+});
+
+// Tutup Modal
+btnCloseTrackingSKTM.addEventListener('click', () => {
+    modalTrackingSKTM.classList.add('hidden');
+});
+
+// Submit Form Pencarian Status SKTM
+formCekStatusSKTM.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const keyword = document.getElementById('inputKeywordSKTM').value.trim();
+    if (!keyword) return;
+
+    btnCekSKTM.disabled = true;
+    btnCekSKTM.innerHTML = '<i class="fa-solid fa-spinner animate-spin"></i>';
+    hasilTrackingSKTM.classList.add('hidden');
+    trackErrorSKTM.classList.add('hidden');
+
+    fetch(`check_status_sktm.php?keyword=${encodeURIComponent(keyword)}`)
+        .then(response => response.json())
+        .then(data => {
+            btnCekSKTM.disabled = false;
+            btnCekSKTM.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i> Cari';
+
+            if (data.status === 'success') {
+                const res = data.data;
+
+                document.getElementById('trackKodeSKTM').innerText = res.tracking_code;
+                document.getElementById('trackKKSKTM').innerText = res.nama_kk;
+                document.getElementById('trackNamaSKTM').innerText = res.nama_siswa;
+                document.getElementById('trackKategoriSKTM').innerText = res.kategori_sktm;
+                document.getElementById('trackTglSKTM').innerText = res.created_at;
+
+                // Set Badge Status berdasarkan data MySQL
+                const badge = document.getElementById('trackStatusBadgeSKTM');
+                const ket = document.getElementById('trackKeteranganSKTM');
+
+                if (res.status === 'Menunggu Verifikasi') {
+                    badge.className = 'font-bold px-2.5 py-1 rounded-full text-[11px] bg-amber-100 text-amber-800';
+                    badge.innerText = 'Menunggu Verifikasi';
+                    ket.innerHTML = '<i class="fa-solid fa-hourglass-half mr-1"></i> Data dan persyaratan sosial Anda sedang diselaraskan dengan data DTKS desa.';
+                } else if (res.status === 'Disetujui' || res.status === 'Selesai') {
+                    badge.className = 'font-bold px-2.5 py-1 rounded-full text-[11px] bg-emerald-100 text-emerald-800';
+                    badge.innerText = 'Surat Selesai / Siap Diambil';
+                    ket.innerHTML = '<i class="fa-solid fa-circle-check mr-1"></i> Dokumen SKTM telah diterbitkan dan ditandatangani. Silakan ambil di Balai Desa Sukasari.';
+                } else if (res.status === 'Ditolak') {
+                    badge.className = 'font-bold px-2.5 py-1 rounded-full text-[11px] bg-red-100 text-red-800';
+                    badge.innerText = 'Pengajuan Ditolak';
+                    ket.innerHTML = '<i class="fa-solid fa-circle-xmark mr-1"></i> Permohonan ditolak/belum memenuhi syarat. Silakan konfirmasi ke Kasi Kesejahteraan Desa.';
+                } else {
+                    badge.className = 'font-bold px-2.5 py-1 rounded-full text-[11px] bg-blue-100 text-blue-800';
+                    badge.innerText = res.status;
+                    ket.innerHTML = '<i class="fa-solid fa-info-circle mr-1"></i> Status pengajuan: ' + res.status;
+                }
+
+                hasilTrackingSKTM.classList.remove('hidden');
+            } else {
+                trackErrorSKTM.classList.remove('hidden');
+            }
+        })
+        .catch(err => {
+            btnCekSKTM.disabled = false;
+            btnCekSKTM.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i> Cari';
+            console.error(err);
+            alert('Terjadi kesalahan jaringan.');
+        });
+});
+    </script>
+</body>
+</html>

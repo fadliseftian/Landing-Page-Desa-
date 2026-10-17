@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi Desa Sukasari - Asri, Mandiri, & Sejahtera</title>
+    
+    <!-- Tailwind CSS (Framework) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link CSS Terpisah -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Top Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- Logo Desa Sukasari -->
+            <a href="#beranda" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-emerald-600/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">Sukasari</span>
+                    <span class="text-[10px] tracking-widest text-emerald-600 font-semibold uppercase">Desa Digital</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#beranda" class="hover:text-emerald-600 transition-colors py-1">Beranda</a>
+                <a href="#profil" class="hover:text-emerald-600 transition-colors py-1">Profil</a>
+                <a href="#layanan" class="hover:text-emerald-600 transition-colors py-1">Layanan</a>
+                <a href="#potensi" class="hover:text-emerald-600 transition-colors py-1">Potensi Desa</a>
+                <a href="#berita" class="hover:text-emerald-600 transition-colors py-1">Berita</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#layanan" class="btn-primary text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full bg-emerald-600 text-white hover:bg-emerald-700 shadow-md transition-all">
+                    Akses Layanan
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg border-b border-slate-200 p-6 shadow-xl flex flex-col gap-4 text-center">
+            <a href="#beranda" class="mobile-link text-slate-700 font-medium py-2">Beranda</a>
+            <a href="#profil" class="mobile-link text-slate-700 font-medium py-2">Profil Desa</a>
+            <a href="#layanan" class="mobile-link text-slate-700 font-medium py-2">Layanan Publik</a>
+            <a href="#potensi" class="mobile-link text-slate-700 font-medium py-2">Potensi Desa</a>
+            <a href="#berita" class="mobile-link text-slate-700 font-medium py-2">Berita & Agenda</a>
+            <a href="#kontak" class="mobile-link text-slate-700 font-medium py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section id="beranda" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden hero-bg">
+        <!-- Overlay Layer -->
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-emerald-950/70 z-10"></div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-20 max-w-5xl mx-auto text-center text-white space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-400/30 text-emerald-300 text-xs font-semibold tracking-wide uppercase">
+                <i class="fa-solid fa-leaf"></i> Selamat Datang Di Portal Resmi
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                Mewujudkan <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Desa Sukasari</span> yang Asri, Mandiri, & Sejahtera
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-slate-200 text-base sm:text-lg font-light leading-relaxed">
+                Pusat informasi publik, layanan digital mandiri, dan eksplorasi potensi keindahan alam serta budaya Desa Sukasari.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#layanan" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-600 font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all transform hover:-translate-y-0.5">
+                    Layanan Mandiri
+                </a>
+                <a href="#profil" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 font-semibold text-white transition-all">
+                    Jelajahi Profil
+                </a>
+            </div>
+
+            <!-- Quick Stats Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-12">
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">3.850+</div>
+                    <div class="text-xs text-slate-300 font-medium mt-1">Penduduk</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">1.240</div>
+                    <div class="text-xs text-slate-300 font-medium mt-1">Kepala Keluarga</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">4</div>
+                    <div class="text-xs text-slate-300 font-medium mt-1">Dusun / Wilayah</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">850 Ha</div>
+                    <div class="text-xs text-slate-300 font-medium mt-1">Luas Wilayah</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PROFIL & VISI MISI -->
+    <section id="profil" class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <!-- Sambutan Kepala Desa -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Kepala Desa Sukasari" class="w-full h-[420px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6 text-white">
+                            <h3 class="text-xl font-bold">H. Ahmad Dahlan, S.Sos.</h3>
+                            <p class="text-xs text-emerald-400 font-medium">Kepala Desa Sukasari (2021 - 2027)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Sambutan Kepala Desa</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                        "Bersama Membangun Desa yang Berdaya Saing & Berkelanjutan"
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Selamat datang di portal informasi resmi Desa Sukasari. Website ini merupakan wujud keterbukaan informasi publik dan komitmen kami dalam memberikan pelayanan digital terpadu yang cepat, transparan, dan akuntabel bagi seluruh warga.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Mari bersama-sama kita jaga kelestarian alam, tingkatkan ekonomi gotong royong, dan wujudkan Desa Sukasari sebagai desa percontohan nasional.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Visi & Misi Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
+                <!-- Visi -->
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-3xl border border-emerald-100/60 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900">Visi Desa</h3>
+                    <p class="text-slate-700 italic leading-relaxed font-medium">
+                        "Terwujudnya Desa Sukasari yang Sejahtera, Mandiri, Berbasis Pertanian Kreatif, dan Berbudaya Berlandaskan Gotong Royong pada Tahun 2027."
+                    </p>
+                </div>
+
+                <!-- Misi -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900">Misi Utama</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+                            <span>Meningkatkan kualitas pelayanan publik berbasis teknologi digital secara inklusif.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+                            <span>Mengembangkan potensi UMKM dan pertanian modern berdaya saing tinggi.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+                            <span>Memperkuat infrastruktur desa yang ramah lingkungan dan berkelanjutan.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: LAYANAN PUBLIK DIGITAL -->
+    <section id="layanan" class="py-20 px-6 md:px-12 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-emerald-400 font-semibold text-sm tracking-widest uppercase">Pelayanan Publik</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Layanan Surat & Administrasi Digital</h2>
+                <p class="text-slate-400 text-sm">Proses pembuatan surat keterangan warga kini lebih mudah, transparan, dan dapat diakses kapan saja.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="feature-card p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Surat Keterangan Usaha</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Pengajuan surat Keterangan Usaha (SKU) resmi dari desa untuk keperluan legalitas UMKM.</p>
+                    <a href="usaha.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ajukan Online <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Surat Keterangan Domisili</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Layanan permohonan surat keterangan tempat tinggal bagi warga baru atau pindahan.</p>
+                    <a href="SKdomisili.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ajukan Online <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Surat Keterangan Tidak Mampu</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Dokumen pengantar SKTM untuk permohonan beasiswa atau bantuan kesehatan.</p>
+                    <a href="SKTM.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ajukan Online <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Aduan & Aspirasi</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Sampaikan masukan, laporan fasilitas umum, atau aspirasi warga langsung ke aparatur desa.</p>
+                    <a href="AduanAspirasi.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Sampaikan Laporan <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: POTENSI DESA -->
+    <section id="potensi" class="py-20 px-6 md:px-12 bg-slate-50">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Keunggulan Lokal</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Potensi & Komoditas Desa</h2>
+                <p class="text-slate-600 text-sm">Menampilkan kekayaan alam, produk UMKM unggulan, dan keindahan wisata Desa Sukasari.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Potensi 1: Wisata -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-slate-100 group">
+                    <div class="relative overflow-hidden h-52">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=800" alt="Wisata Alam Curug Sukasari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Ekowisata</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-bold text-slate-900">Curug & Camping Ground Sukasari</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Destinasi wisata alam air terjun jernih yang dikelilingi perbukitan hijau dan area perkemahan keluarga.</p>
+                    </div>
+                </div>
+
+                <!-- Potensi 2: Pertanian -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-slate-100 group">
+                    <div class="relative overflow-hidden h-52">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=800" alt="Pertanian Kopi Organik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Pertanian</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-bold text-slate-900">Kopi Arabika Organik</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Perkebunan kopi khas dataran tinggi Sukasari dengan cita rasa khas yang telah dipasarkan ke mancanegara.</p>
+                    </div>
+                </div>
+
+                <!-- Potensi 3: UMKM -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-slate-100 group">
+                    <div class="relative overflow-hidden h-52">
+                        <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&q=80&w=800" alt="Kerajinan Anyaman Bambu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-teal-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">UMKM Kreatif</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-bold text-slate-900">Kerajinan Anyaman Bambu</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Produk kriya tradisional bernilai seni tinggi buatan tangan pengrajin lokal untuk perlengkapan rumah tangga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: BERITA & AGENDA -->
+    <section id="berita" class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-100 pb-6">
+                <div>
+                    <span class="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Kabar Desa</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900">Berita & Kegiatan Terkini</h2>
+                </div>
+                <a href="#" class="text-sm font-semibold text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
+                    Lihat Semua Berita <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Artikel 1 -->
+                <article class="space-y-3">
+                    <div class="rounded-2xl overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&q=80&w=800" alt="Pelatihan UMKM" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <div class="flex items-center gap-3 text-xs text-slate-400">
+                        <span><i class="fa-regular fa-calendar mr-1"></i> 14 Oktober 2026</span>
+                        <span>•</span>
+                        <span class="text-emerald-600 font-medium">Pemberdayaan</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 hover:text-emerald-600 transition-colors">
+                        <a href="#">Pelatihan Pemasaran Digital bagi Pelaku UMKM Desa Sukasari</a>
+                    </h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Aparatur desa bekerja sama dengan akademisi menggelar workshop optimalisasi media sosial untuk UMKM.</p>
+                </article>
+
+                <!-- Artikel 2 -->
+                <article class="space-y-3">
+                    <div class="rounded-2xl overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?auto=format&fit=crop&q=80&w=800" alt="Gotong Royong Bersih Desa" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <div class="flex items-center gap-3 text-xs text-slate-400">
+                        <span><i class="fa-regular fa-calendar mr-1"></i> 02 Oktober 2026</span>
+                        <span>•</span>
+                        <span class="text-emerald-600 font-medium">Kegiatan Warga</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 hover:text-emerald-600 transition-colors">
+                        <a href="#">Giat Gotong Royong Massal Sambut Musim Tanam 2026</a>
+                    </h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Ratusan warga Dusun 1 dan Dusun 2 membersihkan saluran irigasi utama demi kelancaran pasokan air kelola sawah.</p>
+                </article>
+
+                <!-- Artikel 3 -->
+                <article class="space-y-3">
+                    <div class="rounded-2xl overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800" alt="Posyandu Balita" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <div class="flex items-center gap-3 text-xs text-slate-400">
+                        <span><i class="fa-regular fa-calendar mr-1"></i> 25 September 2026</span>
+                        <span>•</span>
+                        <span class="text-emerald-600 font-medium">Kesehatan</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 hover:text-emerald-600 transition-colors">
+                        <a href="#">Program Penguatan Gizi Anak dan Posyandu Integrasi Layanan Primat</a>
+                    </h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Pemerintah desa memberikan tambahan makanan bergizi secara gratis untuk balita dan ibu hamil.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & KONTAK -->
+    <footer id="kontak" class="bg-slate-950 text-slate-400 text-sm pt-16 pb-8 px-6 md:px-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 pb-12">
+            
+            <!-- Col 1: Brand Info -->
+            <div class="md:col-span-5 space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold text-lg">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">Desa Sukasari</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                    Kantor Desa Sukasari, Kecamatan Bandung Barat, Kabupaten Bandung, Jawa Barat 40552.
+                </p>
+                <div class="flex gap-4 text-base pt-2">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Navigation Links -->
+            <div class="md:col-span-3 space-y-3">
+                <h4 class="text-white font-semibold text-sm tracking-wide">Tautan Cepat</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#beranda" class="hover:text-emerald-400 transition-colors">Beranda Utama</a></li>
+                    <li><a href="#profil" class="hover:text-emerald-400 transition-colors">Visi & Misi Desa</a></li>
+                    <li><a href="#layanan" class="hover:text-emerald-400 transition-colors">Pelayanan Surat Mandiri</a></li>
+                    <li><a href="#potensi" class="hover:text-emerald-400 transition-colors">Ekowisata & UMKM</a></li>
+                    <li><a href="#berita" class="hover:text-emerald-400 transition-colors">Pengumuman & Berita</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact Info -->
+            <div class="md:col-span-4 space-y-3">
+                <h4 class="text-white font-semibold text-sm tracking-wide">Hubungi Kami</h4>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-emerald-500"></i>
+                        <span>(022) 8765-4321</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-emerald-500"></i>
+                        <span>kontak@desasukasari.id</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-clock text-emerald-500"></i>
+                        <span>Senin - Jumat: 08.00 - 15.30 WIB</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="max-w-7xl mx-auto border-t border-slate-800/80 pt-6 text-center text-xs text-slate-500">
+            <p>&copy; 2026 Pemerintah Desa Sukasari. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Mobile Menu Toggle logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar Shadow on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>

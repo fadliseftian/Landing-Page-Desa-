@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aduan & Aspirasi Warga - Desa Sukasari</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Terpisah -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-['Plus_Jakarta_Sans']">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- Logo & Back to Home -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-emerald-600/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">Sukasari</span>
+                    <span class="text-[10px] tracking-widest text-emerald-600 font-semibold uppercase">Layanan Mandiri</span>
+                </div>
+            </a>
+
+            <!-- Back Link -->
+            <a href="index.html#layanan" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">
+                <i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-12 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/80 to-slate-900/90 z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-20">
+            <div class="flex items-center gap-3 text-emerald-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                <i class="fa-solid fa-comments"></i> Pusat Partisipasi Masyarakat
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Layanan Aduan & Aspirasi Warga</h1>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mt-2 leading-relaxed">
+                Sampaikan laporan kerusakan fasilitas umum, keluhan pelayanan publik, masukan pembangunan, atau aspirasi warga langsung kepada Pemerintah Desa Sukasari secara cepat, transparan, dan terlacak.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Area: Form & Information -->
+    <main class="max-w-7xl mx-auto px-6 md:px-12 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Sidebar: Petunjuk & Privasi -->
+            <div class="lg:col-span-4 space-y-6">
+                
+                <!-- Card Jaminan Rahasia -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2.5">
+                        <i class="fa-solid fa-shield-halved text-emerald-600"></i> Komitmen & Identitas
+                    </h3>
+                    <ul class="space-y-3 text-xs text-slate-600">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                            <span><strong>Kerahasiaan Terjamin:</strong> Anda dapat memilih opsi pengiriman secara Anonim/Rahasia.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                            <span><strong>Respon Cepat:</strong> Setiap laporan yang masuk akan ditindaklanjuti maksimal 2x24 jam kerja.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                            <span><strong>Bukti Foto:</strong> Melampirkan foto lokasi/kejadian akan mempercepat proses penanganan di lapangan.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card Alur Tindak Lanjut -->
+                <div class="bg-emerald-900 text-white p-6 rounded-3xl space-y-4 shadow-lg shadow-emerald-950/20">
+                    <h3 class="text-lg font-bold text-emerald-300 flex items-center gap-2.5">
+                        <i class="fa-solid fa-arrows-spin"></i> Alur Penanganan Laporan
+                    </h3>
+                    <div class="space-y-4 text-xs">
+                        <div class="flex gap-3 items-start">
+                            <span class="w-6 h-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-[10px] shrink-0">1</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Kirim Laporan</h4>
+                                <p class="text-emerald-200 text-[11px]">Formulir diterima oleh Admin Aduan Desa Sukasari.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="w-6 h-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-[10px] shrink-0">2</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Disposisi ke Tim Terkait</h4>
+                                <p class="text-emerald-200 text-[11px]">Laporan diteruskan ke RT/RW, Kadus, atau Kepala Seksi Pembangunan.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="w-6 h-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-[10px] shrink-0">3</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Tindak Lanjut & Selesai</h4>
+                                <p class="text-emerald-200 text-[11px]">Aksi perbaikan atau jawaban konfirmasi dikirimkan via WhatsApp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Form Utama Aduan & Aspirasi -->
+            <div class="lg:col-span-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-6">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">Formulir Laporan & Aspirasi Warga</h2>
+                        <p class="text-xs text-slate-500 mt-1">Sampaikan masukan Anda secara rinci agar memudahkan petugas dalam melakukan verifikasi.</p>
+                    </div>
+
+                    <form id="formAduan" class="space-y-6">
+                        
+                        <!-- Bagian 1: Data Pelapor -->
+                        <div class="border-b border-slate-100 pb-6 space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-sm font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-2">
+                                    <i class="fa-solid fa-user"></i> 1. Data Pelapor
+                                </h3>
+                                <!-- Toggle Anonim -->
+                                <label class="inline-flex items-center gap-2 cursor-pointer text-xs font-semibold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-full hover:bg-slate-200 transition-colors">
+                                    <input type="checkbox" id="checkAnonim" class="rounded text-emerald-600 focus:ring-emerald-500">
+                                    <span>Kirim sebagai Anonim (Rahasia)</span>
+                                </label>
+                            </div>
+                            
+                            <div id="wrapperDataDiri" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Lengkap *</label>
+                                    <input type="text" id="namaPelapor" required placeholder="Contoh: Ahmad Fauzi" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nomor WhatsApp / HP *</label>
+                                    <input type="tel" id="hpPelapor" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div id="wrapperWilayah" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Wilayah Dusun / RT / RW *</label>
+                                    <input type="text" id="rtrwPelapor" required placeholder="Contoh: Dusun 2 / RT 03 RW 01" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Jenis Laporan *</label>
+                                    <select id="jenisLaporan" required class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                        <option value="Aduan / Keluhan">Aduan / Keluhan Masalah</option>
+                                        <option value="Aspirasi / Saran Pembangunan">Aspirasi & Saran Pembangunan</option>
+                                        <option value="Laporan Fasilitas Rusak">Laporan Fasilitas Umum Rusak</option>
+                                        <option value="Pertanyaan / Informasi Publik">Pertanyaan Layanan Publik</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bagian 2: Rincian Aduan / Aspirasi -->
+                        <div class="space-y-4">
+                            <h3 class="text-sm font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-bullhorn"></i> 2. Rincian Laporan / Aspirasi
+                            </h3>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Kategori Topik *</label>
+                                    <select id="kategoriTopik" required class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                        <option value="">-- Pilih Kategori --</option>
+                                        <option value="Infrastruktur & Jalan">Infrastruktur, Jalan & Saluran Air</option>
+                                        <option value="Pelayanan Administrasi Desa">Pelayanan Administrasi Kantor Desa</option>
+                                        <option value="Kebersihan & Lingkungan Hidup">Kebersihan, Sampah & Lingkungan</option>
+                                        <option value="Keamanan & Ketertiban">Keamanan & Ketertiban Umum (Kamling)</option>
+                                        <option value="Bantuan Sosial">Bantuan Sosial & Penerima Program</option>
+                                        <option value="Lainnya">Topik Lainnya</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Judul Ringkas Laporan *</label>
+                                    <input type="text" id="judulLaporan" required placeholder="Contoh: Lampu Jalan Mati di Gang Masjid Dusun 1" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Lokasi Detail Kejadian / Sasaran Aspirasi *</label>
+                                <input type="text" id="lokasiLaporan" required placeholder="Tuliskan jalan, nama patokan, atau RT/RW lokasi spesifik..." class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Uraian / Isi Laporan Lengkap *</label>
+                                <textarea id="isiLaporan" rows="4" required placeholder="Jelaskan secara kronologis masalah yang ditemukan, dampak bagi warga, atau saran konkret yang ingin disampaikan..." class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-emerald-600 focus:bg-white transition-all"></textarea>
+                            </div>
+
+                            <!-- Lampiran File / Foto -->
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Lampiran Foto Bukti Pendukung (Opsional)</label>
+                                <div class="border-2 border-dashed border-slate-200 bg-slate-50/50 rounded-2xl p-4 text-center hover:bg-slate-100/60 transition-colors cursor-pointer relative">
+                                    <input type="file" id="fotoBukti" accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                    <div class="space-y-1">
+                                        <i class="fa-solid fa-cloud-arrow-up text-2xl text-emerald-600"></i>
+                                        <p class="text-xs text-slate-600 font-medium">Klik untuk memilih atau unggah foto bukti</p>
+                                        <p class="text-[10px] text-slate-400">Format JPG, PNG (Maksimal 5 MB)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button Submit -->
+                        <div class="pt-4">
+                            <button type="submit" id="btnSubmit" class="w-full py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Laporan / Aspirasi
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal Tiket Pengaduan Sukses -->
+    <div id="modalSuccess" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl relative">
+            
+            <div class="text-center space-y-2">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="text-2xl font-extrabold text-slate-900">Laporan Terkirim!</h3>
+                <p class="text-xs text-slate-500">Aduan/Aspirasi Anda telah diterima oleh sistem pelayanan Pemerintah Desa Sukasari.</p>
+            </div>
+
+            <!-- Tiket Details -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs space-y-2 font-mono">
+                <div class="flex justify-between border-b border-slate-200 pb-2">
+                    <span class="text-slate-400">Kode Tiket Aduan:</span>
+                    <span id="resKode" class="font-bold text-emerald-700">LAP-20261017-001</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Nama Pelapor:</span>
+                    <span id="resNama" class="font-bold text-slate-800">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Judul Laporan:</span>
+                    <span id="resJudul" class="font-bold text-slate-800 truncate max-w-[180px]">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Status Penanganan:</span>
+                    <span class="font-bold text-amber-600 bg-amber-100 px-2 py-0.5 rounded">Dalam Antrean Verifikasi</span>
+                </div>
+            </div>
+
+            <div class="text-xs text-slate-500 leading-relaxed text-center">
+                Simpan Kode Tiket ini. Tim Pelayanan Desa akan melakukan peninjauan dan menghubungi Anda jika diperlukan klarifikasi tambahan.
+            </div>
+
+            <div class="flex gap-3">
+                <button onclick="window.print()" class="w-1/2 py-2.5 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-bold text-xs transition-colors">
+                    <i class="fa-solid fa-print"></i> Cetak Tiket
+                </button>
+                <a href="index.html" class="w-1/2 py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-xs text-center transition-colors">
+                    Selesai
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Script Logic -->
+    <script>
+        const checkAnonim = document.getElementById('checkAnonim');
+        const namaPelapor = document.getElementById('namaPelapor');
+        const hpPelapor = document.getElementById('hpPelapor');
+        const rtrwPelapor = document.getElementById('rtrwPelapor');
+        const formAduan = document.getElementById('formAduan');
+        const modalSuccess = document.getElementById('modalSuccess');
+
+        // Toggle Mode Anonim
+        checkAnonim.addEventListener('change', function() {
+            if (this.checked) {
+                namaPelapor.value = "Hamba Allah (Anonim)";
+                namaPelapor.readOnly = true;
+                namaPelapor.classList.add('bg-slate-200', 'text-slate-500');
+
+                hpPelapor.value = "080000000000";
+                hpPelapor.readOnly = true;
+                hpPelapor.classList.add('bg-slate-200', 'text-slate-500');
+
+                rtrwPelapor.placeholder = "Ketik Dusun/RT/RW (Boleh dikosongkan)";
+                rtrwPelapor.required = false;
+            } else {
+                namaPelapor.value = "";
+                namaPelapor.readOnly = false;
+                namaPelapor.classList.remove('bg-slate-200', 'text-slate-500');
+
+                hpPelapor.value = "";
+                hpPelapor.readOnly = false;
+                hpPelapor.classList.remove('bg-slate-200', 'text-slate-500');
+
+                rtrwPelapor.placeholder = "Contoh: Dusun 2 / RT 03 RW 01";
+                rtrwPelapor.required = true;
+            }
+        });
+
+        // Handler Form Submit
+        formAduan.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nama = checkAnonim.checked ? "Anonim (Rahasia)" : namaPelapor.value;
+            const judul = document.getElementById('judulLaporan').value;
+
+            // Buat Kode Tiket Laporan Random
+            const randomNum = Math.floor(1000 + Math.random() * 9000);
+            const kodeTiket = `LAP-${new Date().toISOString().slice(0,10).replace(/-/g,"")}-${randomNum}`;
+
+            document.getElementById('resKode').innerText = kodeTiket;
+            document.getElementById('resNama').innerText = nama;
+            document.getElementById('resJudul').innerText = judul;
+
+            // Tampilkan Modal
+            modalSuccess.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
