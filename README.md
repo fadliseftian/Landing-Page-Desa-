@@ -1,8 +1,9 @@
 # 🇮🇩 Sistem Layanan Mandiri & Administrasi Kependudukan Desa Sukasari
 
 Repositori ini berisi kode sumber (*source code*) untuk **Web Portal Layanan Mandiri Desa Sukasari**, sebuah aplikasi web berbasis komunitas yang dirancang untuk mempermudah warga desa dalam mengajukan permohonan surat keterangan administrasi secara online, serta menyampaikan aspirasi atau aduan publik.
-## Tampilan Web
-Capture.PNG
+## 📸 Tampilan Antarmuka (Preview)
+
+![Preview Landing Page Desa Sukasari](./Capture.PNG)
 
 ---
 
